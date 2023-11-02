@@ -68,7 +68,7 @@ const Section = ({ status, tasks, setTasks, todos, inProgress, closed }) => {
         return t;
       });
       localStorage.setItem("tasks", JSON.stringify(mTasks));
-      toast("Task moved successfully", { icon: "🚀" });
+      toast("Task moved successfully", { icon: "🚀", duration: 1000 });
       return mTasks;
     });
   };
